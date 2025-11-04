@@ -1,4 +1,6 @@
-# Byte-compiled / optimized / DLL files
+# -----------------------------------------
+# PYTHON / GENERAL
+# -----------------------------------------
 __pycache__/
 *.py[cod]
 *.so
@@ -14,6 +16,7 @@ __pycache__/
 output/
 dist/
 build/
+logs/
 
 # Environment files
 .env
@@ -27,3 +30,33 @@ Thumbs.db
 venv/
 .env/
 *.egg-info/
+
+# -----------------------------------------
+# DATA ENGINEERING SPECIFIC
+# -----------------------------------------
+data/raw/
+data/processed/
+!data/raw/README.md   # keep documentation file if needed
+
+# Temporary data and exports
+*.csv
+*.xlsx
+*.xls
+*.zip
+*.bak
+*.tmp
+*.log
+
+# Keep sample/mock data
+!**/sample_*.csv
+
+# -----------------------------------------
+# POWER BI / AZURE / DEVOPS
+# -----------------------------------------
+*.pbix
+*.pbix.shared
+*.rdl
+*.publishsettings
+*.coverage
+*.nupkg
+*.json.tmp
