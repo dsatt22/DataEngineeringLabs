@@ -1,10 +1,13 @@
-# 🚧 [Project Title Goes Here]
+# 🚧 Project 1 - Homeowners Policy Ingestion
 
 ## 📚 Overview
-_What is this project about? What problem does it solve?_
+This project focuses on cleaning, standardizing, and preparing homeowners and motor insurance policy data for ingestion into SQL Server.  
+It represents the first step of a complete data engineering pipeline, taking raw CSV data, cleaning it with Python, and loading it into a structured SQL table.
+
+The same logic will later scale to Azure SQL Database and Synapse.
 
 ## 🧰 Tools & Technologies
-- Python 3.x
+- Python 3.x (pandas, pyodbc)
 - SQL Server / SSMS
 - Power BI
 - VS Code
@@ -12,10 +15,13 @@ _What is this project about? What problem does it solve?_
 
 ## 📁 Project Structure
 
-project-folder/
-├── data/              # Raw or source data files
-├── scripts/           # Python or SQL scripts
-├── output/            # Results, exports, or reports
+project1_policy_ingestion/
+├── data/
+│ ├── raw/ # Original CSV data (homeowners_motor_insurance_5yr.csv)
+│ └── processed/ # Cleaned datasets ready for SQL load
+├── src/ # ETL scripts (Python)
+├── notebooks/ # Optional Jupyter notebooks for exploration
+├── docs/ # Documentation and screenshots
 └── README.md
 
 ## ▶️ How to Run
